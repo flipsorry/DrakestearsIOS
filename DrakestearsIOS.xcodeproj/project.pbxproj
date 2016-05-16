@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBACE4F3FC7E6A77BB46ABFF /* Pods_DrakestearsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E365DCC012611693FEC5105 /* Pods_DrakestearsIOS.framework */; };
+		BDE9193F1CE95E6B008436F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9193E1CE95E6B008436F4 /* AppDelegate.swift */; };
+		BDE919411CE95E6B008436F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE919401CE95E6B008436F4 /* ViewController.swift */; };
+		BDE919441CE95E6B008436F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE919421CE95E6B008436F4 /* Main.storyboard */; };
+		BDE919461CE95E6B008436F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE919451CE95E6B008436F4 /* Assets.xcassets */; };
+		BDE919491CE95E6B008436F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE919471CE95E6B008436F4 /* LaunchScreen.storyboard */; };
+		BDE919511CE965D8008436F4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919501CE965D8008436F4 /* Accelerate.framework */; };
+		BDE919531CE965DF008436F4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919521CE965DF008436F4 /* AudioToolbox.framework */; };
+		BDE919551CE9661F008436F4 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919541CE9661F008436F4 /* GoogleCast.framework */; };
+		BDE919591CE96633008436F4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919561CE96633008436F4 /* AVFoundation.framework */; };
+		BDE9195A1CE96633008436F4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919571CE96633008436F4 /* CoreBluetooth.framework */; };
+		BDE9195B1CE96633008436F4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919581CE96633008436F4 /* CoreText.framework */; };
+		BDE9195F1CE9664C008436F4 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9195C1CE9664C008436F4 /* MediaAccessibility.framework */; };
+		BDE919601CE9664C008436F4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9195D1CE9664C008436F4 /* MediaPlayer.framework */; };
+		BDE919611CE9664C008436F4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9195E1CE9664C008436F4 /* SystemConfiguration.framework */; };
+		BDE919631CE966A6008436F4 /* GoogleCastResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BDE919621CE966A6008436F4 /* GoogleCastResources.bundle */; };
+		BDE919651CE967B8008436F4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919641CE967B8008436F4 /* libc++.tbd */; };
+		BDE919671CE9682A008436F4 /* CastFrameworkAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE919661CE9682A008436F4 /* CastFrameworkAssets.xcassets */; };
+		BDE919691CE96992008436F4 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919681CE96991008436F4 /* MediaToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E365DCC012611693FEC5105 /* Pods_DrakestearsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrakestearsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B91E73CAAF0D20001DA027 /* Pods-DrakestearsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrakestearsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrakestearsIOS/Pods-DrakestearsIOS.release.xcconfig"; sourceTree = "<group>"; };
+		8AC25DEE1C0A5E932BBED81D /* Pods-DrakestearsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrakestearsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrakestearsIOS/Pods-DrakestearsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BDAFAB9C1CE9797300E2592E /* Drakestears-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drakestears-Bridge.h"; sourceTree = SOURCE_ROOT; };
+		BDE9193B1CE95E6B008436F4 /* DrakestearsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrakestearsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE9193E1CE95E6B008436F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDE919401CE95E6B008436F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDE919431CE95E6B008436F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDE919451CE95E6B008436F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDE919481CE95E6B008436F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDE9194A1CE95E6B008436F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE919501CE965D8008436F4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		BDE919521CE965DF008436F4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BDE919541CE9661F008436F4 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../../Downloads/GoogleCastSDK-2.10.4-Release/GoogleCast.framework"; sourceTree = "<group>"; };
+		BDE919561CE96633008436F4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BDE919571CE96633008436F4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BDE919581CE96633008436F4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		BDE9195C1CE9664C008436F4 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		BDE9195D1CE9664C008436F4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BDE9195E1CE9664C008436F4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BDE919621CE966A6008436F4 /* GoogleCastResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleCastResources.bundle; sourceTree = "<group>"; };
+		BDE919641CE967B8008436F4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BDE919661CE9682A008436F4 /* CastFrameworkAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CastFrameworkAssets.xcassets; sourceTree = "<group>"; };
+		BDE919681CE96991008436F4 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDE919381CE95E6B008436F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE919691CE96992008436F4 /* MediaToolbox.framework in Frameworks */,
+				BDE919651CE967B8008436F4 /* libc++.tbd in Frameworks */,
+				BDE9195F1CE9664C008436F4 /* MediaAccessibility.framework in Frameworks */,
+				BDE919601CE9664C008436F4 /* MediaPlayer.framework in Frameworks */,
+				BDE919611CE9664C008436F4 /* SystemConfiguration.framework in Frameworks */,
+				BDE919591CE96633008436F4 /* AVFoundation.framework in Frameworks */,
+				BDE9195A1CE96633008436F4 /* CoreBluetooth.framework in Frameworks */,
+				BDE9195B1CE96633008436F4 /* CoreText.framework in Frameworks */,
+				BDE919551CE9661F008436F4 /* GoogleCast.framework in Frameworks */,
+				BDE919531CE965DF008436F4 /* AudioToolbox.framework in Frameworks */,
+				BDE919511CE965D8008436F4 /* Accelerate.framework in Frameworks */,
+				BBACE4F3FC7E6A77BB46ABFF /* Pods_DrakestearsIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		290428A97F12A3007346F25D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E365DCC012611693FEC5105 /* Pods_DrakestearsIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A776406C30F73A5474C17A3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AC25DEE1C0A5E932BBED81D /* Pods-DrakestearsIOS.debug.xcconfig */,
+				65B91E73CAAF0D20001DA027 /* Pods-DrakestearsIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDE919321CE95E6B008436F4 = {
+			isa = PBXGroup;
+			children = (
+				BDE919681CE96991008436F4 /* MediaToolbox.framework */,
+				BDE919661CE9682A008436F4 /* CastFrameworkAssets.xcassets */,
+				BDE919641CE967B8008436F4 /* libc++.tbd */,
+				BDE919621CE966A6008436F4 /* GoogleCastResources.bundle */,
+				BDE9195C1CE9664C008436F4 /* MediaAccessibility.framework */,
+				BDE9195D1CE9664C008436F4 /* MediaPlayer.framework */,
+				BDE9195E1CE9664C008436F4 /* SystemConfiguration.framework */,
+				BDE919561CE96633008436F4 /* AVFoundation.framework */,
+				BDE919571CE96633008436F4 /* CoreBluetooth.framework */,
+				BDE919581CE96633008436F4 /* CoreText.framework */,
+				BDE919541CE9661F008436F4 /* GoogleCast.framework */,
+				BDE919521CE965DF008436F4 /* AudioToolbox.framework */,
+				BDE919501CE965D8008436F4 /* Accelerate.framework */,
+				BDE9193D1CE95E6B008436F4 /* DrakestearsIOS */,
+				BDE9193C1CE95E6B008436F4 /* Products */,
+				A776406C30F73A5474C17A3E /* Pods */,
+				290428A97F12A3007346F25D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDE9193C1CE95E6B008436F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDE9193B1CE95E6B008436F4 /* DrakestearsIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDE9193D1CE95E6B008436F4 /* DrakestearsIOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDE9193E1CE95E6B008436F4 /* AppDelegate.swift */,
+				BDE919401CE95E6B008436F4 /* ViewController.swift */,
+				BDE919421CE95E6B008436F4 /* Main.storyboard */,
+				BDE919451CE95E6B008436F4 /* Assets.xcassets */,
+				BDE919471CE95E6B008436F4 /* LaunchScreen.storyboard */,
+				BDE9194A1CE95E6B008436F4 /* Info.plist */,
+				BDAFAB9C1CE9797300E2592E /* Drakestears-Bridge.h */,
+			);
+			path = DrakestearsIOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDE9193A1CE95E6B008436F4 /* DrakestearsIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE9194D1CE95E6B008436F4 /* Build configuration list for PBXNativeTarget "DrakestearsIOS" */;
+			buildPhases = (
+				82C00602ADC9FAF0A1B8C63C /* 📦 Check Pods Manifest.lock */,
+				BDE919371CE95E6B008436F4 /* Sources */,
+				BDE919381CE95E6B008436F4 /* Frameworks */,
+				BDE919391CE95E6B008436F4 /* Resources */,
+				7303554B71196D3ADFDAC7FF /* 📦 Embed Pods Frameworks */,
+				C83FE7B09D58B41116B2113E /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrakestearsIOS;
+			productName = DrakestearsIOS;
+			productReference = BDE9193B1CE95E6B008436F4 /* DrakestearsIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDE919331CE95E6B008436F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dinh, Liem";
+				TargetAttributes = {
+					BDE9193A1CE95E6B008436F4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BDE919361CE95E6B008436F4 /* Build configuration list for PBXProject "DrakestearsIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDE919321CE95E6B008436F4;
+			productRefGroup = BDE9193C1CE95E6B008436F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDE9193A1CE95E6B008436F4 /* DrakestearsIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDE919391CE95E6B008436F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE919671CE9682A008436F4 /* CastFrameworkAssets.xcassets in Resources */,
+				BDE919631CE966A6008436F4 /* GoogleCastResources.bundle in Resources */,
+				BDE919491CE95E6B008436F4 /* LaunchScreen.storyboard in Resources */,
+				BDE919461CE95E6B008436F4 /* Assets.xcassets in Resources */,
+				BDE919441CE95E6B008436F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7303554B71196D3ADFDAC7FF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrakestearsIOS/Pods-DrakestearsIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C00602ADC9FAF0A1B8C63C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C83FE7B09D58B41116B2113E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrakestearsIOS/Pods-DrakestearsIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDE919371CE95E6B008436F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE919411CE95E6B008436F4 /* ViewController.swift in Sources */,
+				BDE9193F1CE95E6B008436F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDE919421CE95E6B008436F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDE919431CE95E6B008436F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDE919471CE95E6B008436F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDE919481CE95E6B008436F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDE9194B1CE95E6B008436F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDE9194C1CE95E6B008436F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDE9194E1CE95E6B008436F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC25DEE1C0A5E932BBED81D /* Pods-DrakestearsIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DrakestearsIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipsorry.DrakestearsIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Drakestears-Bridge.h";
+			};
+			name = Debug;
+		};
+		BDE9194F1CE95E6B008436F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B91E73CAAF0D20001DA027 /* Pods-DrakestearsIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DrakestearsIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipsorry.DrakestearsIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Drakestears-Bridge.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDE919361CE95E6B008436F4 /* Build configuration list for PBXProject "DrakestearsIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE9194B1CE95E6B008436F4 /* Debug */,
+				BDE9194C1CE95E6B008436F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE9194D1CE95E6B008436F4 /* Build configuration list for PBXNativeTarget "DrakestearsIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE9194E1CE95E6B008436F4 /* Debug */,
+				BDE9194F1CE95E6B008436F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDE919331CE95E6B008436F4 /* Project object */;
+}
