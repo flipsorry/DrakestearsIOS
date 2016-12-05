@@ -4,5 +4,5 @@ platform :ios, '8.1'
 use_frameworks!
 
 target 'DrakestearsIOS' do
-  pod 'google-cast-sdk'
+  pod 'google-cast-sdk', '~> 2.10.4'
 end

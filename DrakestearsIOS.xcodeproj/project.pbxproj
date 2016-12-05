@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BBACE4F3FC7E6A77BB46ABFF /* Pods_DrakestearsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E365DCC012611693FEC5105 /* Pods_DrakestearsIOS.framework */; };
+		BD401B011CE9A08000649A6D /* GoogleCastResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BDE919621CE966A6008436F4 /* GoogleCastResources.bundle */; };
+		BD401B031CE9A10A00649A6D /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAFABA11CE99ECA00E2592E /* GoogleCast.framework */; };
 		BDE9193F1CE95E6B008436F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9193E1CE95E6B008436F4 /* AppDelegate.swift */; };
 		BDE919411CE95E6B008436F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE919401CE95E6B008436F4 /* ViewController.swift */; };
 		BDE919441CE95E6B008436F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE919421CE95E6B008436F4 /* Main.storyboard */; };
@@ -15,14 +17,12 @@
 		BDE919491CE95E6B008436F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE919471CE95E6B008436F4 /* LaunchScreen.storyboard */; };
 		BDE919511CE965D8008436F4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919501CE965D8008436F4 /* Accelerate.framework */; };
 		BDE919531CE965DF008436F4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919521CE965DF008436F4 /* AudioToolbox.framework */; };
-		BDE919551CE9661F008436F4 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919541CE9661F008436F4 /* GoogleCast.framework */; };
 		BDE919591CE96633008436F4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919561CE96633008436F4 /* AVFoundation.framework */; };
 		BDE9195A1CE96633008436F4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919571CE96633008436F4 /* CoreBluetooth.framework */; };
 		BDE9195B1CE96633008436F4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919581CE96633008436F4 /* CoreText.framework */; };
 		BDE9195F1CE9664C008436F4 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9195C1CE9664C008436F4 /* MediaAccessibility.framework */; };
 		BDE919601CE9664C008436F4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9195D1CE9664C008436F4 /* MediaPlayer.framework */; };
 		BDE919611CE9664C008436F4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9195E1CE9664C008436F4 /* SystemConfiguration.framework */; };
-		BDE919631CE966A6008436F4 /* GoogleCastResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BDE919621CE966A6008436F4 /* GoogleCastResources.bundle */; };
 		BDE919651CE967B8008436F4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919641CE967B8008436F4 /* libc++.tbd */; };
 		BDE919671CE9682A008436F4 /* CastFrameworkAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE919661CE9682A008436F4 /* CastFrameworkAssets.xcassets */; };
 		BDE919691CE96992008436F4 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE919681CE96991008436F4 /* MediaToolbox.framework */; };
@@ -32,7 +32,11 @@
 		3E365DCC012611693FEC5105 /* Pods_DrakestearsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrakestearsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B91E73CAAF0D20001DA027 /* Pods-DrakestearsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrakestearsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrakestearsIOS/Pods-DrakestearsIOS.release.xcconfig"; sourceTree = "<group>"; };
 		8AC25DEE1C0A5E932BBED81D /* Pods-DrakestearsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrakestearsIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrakestearsIOS/Pods-DrakestearsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD401AFE1CE99F7E00649A6D /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "Pods/google-cast-sdk/GoogleCastSDK-2.7.1-Release/GoogleCast.framework"; sourceTree = "<group>"; };
 		BDAFAB9C1CE9797300E2592E /* Drakestears-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Drakestears-Bridge.h"; sourceTree = SOURCE_ROOT; };
+		BDAFAB9D1CE99E6800E2592E /* GoogleCastSDK-2.10.4-Release-ios-default-External.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "GoogleCastSDK-2.10.4-Release-ios-default-External.zip"; path = "../../../Downloads/GoogleCastSDK-2.10.4-Release-ios-default-External.zip"; sourceTree = "<group>"; };
+		BDAFAB9F1CE99EB400E2592E /* GoogleCastSDK-2.10.4-Release */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "GoogleCastSDK-2.10.4-Release"; path = "../../../Downloads/GoogleCastSDK-2.10.4-Release"; sourceTree = "<group>"; };
+		BDAFABA11CE99ECA00E2592E /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../../Downloads/GoogleCastSDK-2.10.4-Release/GoogleCast.framework"; sourceTree = "<group>"; };
 		BDE9193B1CE95E6B008436F4 /* DrakestearsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrakestearsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE9193E1CE95E6B008436F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDE919401CE95E6B008436F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +46,6 @@
 		BDE9194A1CE95E6B008436F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE919501CE965D8008436F4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		BDE919521CE965DF008436F4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		BDE919541CE9661F008436F4 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../../Downloads/GoogleCastSDK-2.10.4-Release/GoogleCast.framework"; sourceTree = "<group>"; };
 		BDE919561CE96633008436F4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BDE919571CE96633008436F4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		BDE919581CE96633008436F4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD401B031CE9A10A00649A6D /* GoogleCast.framework in Frameworks */,
 				BDE919691CE96992008436F4 /* MediaToolbox.framework in Frameworks */,
 				BDE919651CE967B8008436F4 /* libc++.tbd in Frameworks */,
 				BDE9195F1CE9664C008436F4 /* MediaAccessibility.framework in Frameworks */,
@@ -68,7 +72,6 @@
 				BDE919591CE96633008436F4 /* AVFoundation.framework in Frameworks */,
 				BDE9195A1CE96633008436F4 /* CoreBluetooth.framework in Frameworks */,
 				BDE9195B1CE96633008436F4 /* CoreText.framework in Frameworks */,
-				BDE919551CE9661F008436F4 /* GoogleCast.framework in Frameworks */,
 				BDE919531CE965DF008436F4 /* AudioToolbox.framework in Frameworks */,
 				BDE919511CE965D8008436F4 /* Accelerate.framework in Frameworks */,
 				BBACE4F3FC7E6A77BB46ABFF /* Pods_DrakestearsIOS.framework in Frameworks */,
@@ -81,6 +84,10 @@
 		290428A97F12A3007346F25D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD401AFE1CE99F7E00649A6D /* GoogleCast.framework */,
+				BDAFABA11CE99ECA00E2592E /* GoogleCast.framework */,
+				BDAFAB9F1CE99EB400E2592E /* GoogleCastSDK-2.10.4-Release */,
+				BDAFAB9D1CE99E6800E2592E /* GoogleCastSDK-2.10.4-Release-ios-default-External.zip */,
 				3E365DCC012611693FEC5105 /* Pods_DrakestearsIOS.framework */,
 			);
 			name = Frameworks;
@@ -108,7 +115,6 @@
 				BDE919561CE96633008436F4 /* AVFoundation.framework */,
 				BDE919571CE96633008436F4 /* CoreBluetooth.framework */,
 				BDE919581CE96633008436F4 /* CoreText.framework */,
-				BDE919541CE9661F008436F4 /* GoogleCast.framework */,
 				BDE919521CE965DF008436F4 /* AudioToolbox.framework */,
 				BDE919501CE965D8008436F4 /* Accelerate.framework */,
 				BDE9193D1CE95E6B008436F4 /* DrakestearsIOS */,
@@ -175,6 +181,7 @@
 				TargetAttributes = {
 					BDE9193A1CE95E6B008436F4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9K6DARFCBM;
 					};
 				};
 			};
@@ -201,8 +208,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD401B011CE9A08000649A6D /* GoogleCastResources.bundle in Resources */,
 				BDE919671CE9682A008436F4 /* CastFrameworkAssets.xcassets in Resources */,
-				BDE919631CE966A6008436F4 /* GoogleCastResources.bundle in Resources */,
 				BDE919491CE95E6B008436F4 /* LaunchScreen.storyboard in Resources */,
 				BDE919461CE95E6B008436F4 /* Assets.xcassets in Resources */,
 				BDE919441CE95E6B008436F4 /* Main.storyboard in Resources */,
@@ -381,11 +388,18 @@
 			baseConfigurationReference = 8AC25DEE1C0A5E932BBED81D /* Pods-DrakestearsIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/google-cast-sdk/GoogleCastSDK-2.7.1-Release",
+				);
 				INFOPLIST_FILE = DrakestearsIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flipsorry.DrakestearsIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Drakestears-Bridge.h";
 			};
 			name = Debug;
@@ -395,11 +409,18 @@
 			baseConfigurationReference = 65B91E73CAAF0D20001DA027 /* Pods-DrakestearsIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/google-cast-sdk/GoogleCastSDK-2.7.1-Release",
+				);
 				INFOPLIST_FILE = DrakestearsIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flipsorry.DrakestearsIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Drakestears-Bridge.h";
 			};
 			name = Release;

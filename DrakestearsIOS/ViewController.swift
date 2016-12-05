@@ -9,19 +9,28 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKScriptMessageHandler {
+
+class ViewController: UIViewController, WKScriptMessageHandler, GCKDeviceScannerListener, GCKLoggerDelegate {
 
     @IBOutlet var containerView: UIView!
     var webView: WKWebView?
     
-    private let kReceiverAppID = "A9350595"
+    //private let kReceiverAppID = "A9350595"
+    private let kReceiverAppID = "794B7BBF"
+    
+    
+    override func loadView() {
+        super.loadView()
+        GCKLogger.sharedInstance().delegate = self
+        getChromecastList(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var contentController = WKUserContentController();
         var userScript = WKUserScript(
-            source: "redHeader()",
+            source: "webkitLoaded()",
             injectionTime: WKUserScriptInjectionTime.AtDocumentEnd,
             forMainFrameOnly: true
         )
@@ -45,10 +54,8 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         
         
         var url = NSURL(string:"http://192.168.1.125/v1/home.php")
-        //var url = NSURL(string:"http://google.com")
         var req = NSURLRequest(URL:url!)
         self.webView!.loadRequest(req)
-        print ("loaded")
 
     }
 
@@ -59,11 +66,11 @@ class ViewController: UIViewController, WKScriptMessageHandler {
     
     func userContentController(userContentController: WKUserContentController!, didReceiveScriptMessage message: WKScriptMessage!) {
         if(message.name == "callbackHandler") {
-            print("JavaScript is sending a message \(message.body)")
-            getChromecastList()
+            // print("JavaScript is sending a message \(message.body)")
+            //getChromecastList(false)
             self.webView!.evaluateJavaScript("window.setChromecasts(\(1 + 1))") { (result, error) in
                 if error == nil {
-                    print(result)
+                    // print(result)
                 } else {
                     print(error)
                 }
@@ -71,22 +78,44 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         }
     }
     
-    func getChromecastList() {
-        print("Start scanning for chomecasts")
+    func getChromecastList(shouldStart: Bool) {
+        //print("Start scanning for chomecasts")
         // Establish filter criteria.
         
         let filterCriteria = GCKFilterCriteria(forAvailableApplicationWithID: kReceiverAppID)
      
         // Initialize device scanner.
         let deviceScanner = GCKDeviceScanner(filterCriteria: filterCriteria)
+        //deviceScanner.passiveScan = false
+        //deviceScanner.startScan()
+        //print("foundDevice: \(deviceScanner.hasDiscoveredDevices) isScanning: \(deviceScanner.scanning)")
+        //deviceScanner.addListener(self)
+        
         if let deviceScanner = deviceScanner {
-            //deviceScanner.addListener(self)
-            //deviceScanner.startScan()
-            deviceScanner.passiveScan = false
-            for device in deviceScanner.devices  {
-                print(device.friendlyName)
+            // print("starting to scan")
+            if (shouldStart) {
+                deviceScanner.addListener(self)
+                deviceScanner.startScan()
+                deviceScanner.passiveScan = true
+            } else {
+                deviceScanner.passiveScan = false
             }
+            //print("foundDevice: \(deviceScanner.hasDiscoveredDevices) isScanning: \(deviceScanner.scanning)")
+            //for device in deviceScanner.devices  {
+            //    print(device.friendlyName)
+            //}
         }
+    }
+    
+    func deviceDidComeOnline(device: GCKDevice!) {
+        print("Device found: \(device.friendlyName)");
+        //for device in deviceScanner.devices  {
+        //    print(device.friendlyName)
+        //}
+    }
+    
+    func deviceDidChange(device: GCKDevice!) {
+        print("Device found: \(device.friendlyName)");
     }
     
     /**
@@ -141,6 +170,12 @@ class ViewController: UIViewController, WKScriptMessageHandler {
     
     func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation, withError error: NSError) {
         print("webView:\(webView) didFailProvisionalNavigation:\(navigation) withError:\(error)")
+    }
+    
+    // LOGGER
+    func logFromFunction(function: UnsafePointer<Int8>, message: String!) {
+        let functionName = String.fromCString(function)
+        print(functionName! + " - " + message);
     }
 
 

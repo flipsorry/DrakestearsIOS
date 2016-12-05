@@ -7,11 +7,11 @@ PODS:
   - google-cast-sdk/Core (2.10.4)
 
 DEPENDENCIES:
-  - google-cast-sdk
+  - google-cast-sdk (~> 2.10.4)
 
 SPEC CHECKSUMS:
   google-cast-sdk: eb83ef6b875969e765011c457b254539c0978792
 
-PODFILE CHECKSUM: b4ba42b3c796a2e03af7c6e50c29a72134f2c233
+PODFILE CHECKSUM: c6b364137e6e51413453c17a92ad553536b522c5
 
 COCOAPODS: 1.0.0
